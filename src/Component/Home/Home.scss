@@ -1,0 +1,95 @@
+.banner {
+    height: 600px;
+    background-color: rgb(20, 20, 20);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 30px;
+
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: rgb(20, 20, 20);
+        opacity: 0.4;
+        top: 0%;
+        left: 0%;
+        position: absolute;
+    }
+
+    h1,
+    p {
+        color: white;
+        font-size: 3rem;
+        width: 40%;
+        z-index: 10;
+    }
+
+    p {
+        font-size: 1.3rem;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+    }
+
+    >div {
+        display: flex;
+
+
+        button {
+            padding: 1rem;
+            width: 150px;
+            outline: none;
+            border: none;
+            z-index: 10;
+            border-radius: 5px;
+            margin: 1rem;
+            background-color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all ease 0.3s;
+            font-size: 15px;
+
+            &:hover {
+                background-color: rgb(229, 9, 20);
+            }
+
+            svg {
+                font-size: 1rem;
+                margin: 0 5px;
+            }
+        }
+    }
+}
+
+.row {
+    background-color: rgb(20, 20, 20);
+    padding: 1rem;
+
+    >h2 {
+        margin: 0.2rem;
+        font-weight: 200;
+    }
+
+    >div {
+        display: flex;
+        overflow-x: auto;
+    }
+}
+
+.card {
+    width: 200px;
+    height: 250px;
+    margin: 0.3rem;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+    &:hover {
+        transform: translateY(-10px);
+    }
+}
